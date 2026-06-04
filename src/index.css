@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  /* 70/20/10 Rule Color System */
+  --deep-navy: #0F172A; /* 70% Foundation */
+  --antique-gold: #C88A2D; /* 20% Lighting & Accents */
+  --ivory: #F5F0E6; /* 10% Typography & Highlights */
+
+  /* Additional Accents */
+  --copper: #A6632B;
+  --purple: #8B5CF6;
+  --emerald: #10B981;
+  --text-dark: #111827;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Global clamp constraints */
+  --heading-huge: clamp(3rem, 8vw, 8rem);
+  --heading-large: clamp(2.5rem, 6vw, 6rem);
+  --heading-medium: clamp(2rem, 4vw, 4rem);
+  --text-base: clamp(1rem, 1.5vw, 1.25rem);
+
+  font-family: var(--font-body);
+  background-color: var(--deep-navy);
+  color: var(--ivory);
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  /* Premium Texture: Subtle radial lighting from Antique Gold */
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(200, 138, 45, 0.1) 0%, transparent 60%),
+    radial-gradient(circle at 90% 80%, rgba(200, 138, 45, 0.05) 0%, transparent 50%),
+    var(--deep-navy);
+  background-attachment: fixed;
+}
+
+/* NO EMPTY SPACE RULE: Engineering Grid & Texture */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  /* Subtle Engineering Grid */
+  background-image: 
+    linear-gradient(rgba(245, 240, 230, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 240, 230, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  /* Paper/Grain Texture */
+  opacity: 0.25;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.8'/%3E%3C/svg%3E");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.scene-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Strict NO SCROLLING rule */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+  outline: none;
+}
+
+/* Custom scrollbar for safe fallback, though no scroll is intended */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--deep-navy); 
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(200, 138, 45, 0.3); 
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(200, 138, 45, 0.6); 
+}
