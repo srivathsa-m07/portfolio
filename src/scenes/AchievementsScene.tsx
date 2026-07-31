@@ -29,7 +29,7 @@ const ACHIEVEMENTS = [
 export const AchievementsScene: React.FC = () => {
   return (
     <motion.div 
-      className="scene-container w-full h-full flex flex-col items-center justify-center text-[#F5F0E6] relative bg-[#0F172A] overflow-y-auto pt-32 pb-32"
+      className="scene-container w-full h-full flex flex-col items-center justify-center text-[#F5F0E6] relative bg-[#0F172A] overflow-y-auto pt-24 pb-16"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -43,8 +43,8 @@ export const AchievementsScene: React.FC = () => {
         >
           Competitive Recognition
         </motion.h2>
-        <motion.h1 
-          className="font-heading text-[clamp(2.5rem,4vw,4rem)] font-bold mb-24 text-center text-[#F5F0E6] leading-none tracking-tight"
+        <motion.h1
+          className="font-heading text-[clamp(2rem,3.5vw,3.25rem)] font-bold mb-14 text-center text-[#F5F0E6] leading-none tracking-tight"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -52,7 +52,7 @@ export const AchievementsScene: React.FC = () => {
         </motion.h1>
 
         {/* Premium Timeline */}
-        <div className="relative w-full flex flex-col gap-24 py-8">
+        <div className="relative w-full flex flex-col gap-14 md:gap-16 py-4">
            {/* Center Timeline Axis */}
            <div className="absolute left-[23px] md:left-1/2 top-0 bottom-0 w-[2px] bg-[#F5F0E6]/10 md:-translate-x-1/2 z-0" />
            <div className="absolute left-[23px] md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-transparent via-[#C88A2D]/40 to-transparent md:-translate-x-1/2 z-0 opacity-50" />
@@ -79,10 +79,10 @@ export const AchievementsScene: React.FC = () => {
                     <span className="font-heading text-[10px] tracking-widest text-[#F5F0E6]/40 font-bold uppercase mb-2">
                       {item.year}
                     </span>
-                    <h3 className="font-heading text-2xl md:text-3xl font-bold tracking-tight text-[#F5F0E6] mb-1">
+                    <h3 className="font-heading text-xl md:text-2xl font-bold tracking-tight text-[#F5F0E6] mb-1 max-w-sm">
                       {item.title}
                     </h3>
-                    <h4 className="font-heading text-xs md:text-sm tracking-[0.2em] font-bold text-[#C88A2D] uppercase mb-4">
+                    <h4 className="font-heading text-xs md:text-sm tracking-[0.2em] font-bold text-[#C88A2D] uppercase mb-3">
                       {item.prize}
                     </h4>
                     <p className="font-body text-[#F5F0E6]/70 text-sm leading-relaxed max-w-sm">

@@ -10,13 +10,13 @@ export const ConnectScene: React.FC = () => {
 
   return (
     <motion.div 
-      className="scene-container w-full h-full flex flex-col items-center justify-center text-[#F5F0E6] relative bg-[#0F172A] overflow-y-auto pt-32 pb-32"
+      className="scene-container w-full h-full flex flex-col items-center justify-center text-[#F5F0E6] relative bg-[#0F172A] overflow-y-auto pt-24 pb-16"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
     >
-      <div className="z-10 w-full max-w-7xl px-8 md:px-16 flex flex-col lg:flex-row gap-16 lg:gap-24">
+      <div className="z-10 w-full max-w-7xl px-8 md:px-16 flex flex-col lg:flex-row gap-10 lg:gap-16">
         
         {/* Left Side: Contact Details */}
         <motion.div 

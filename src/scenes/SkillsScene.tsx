@@ -58,7 +58,7 @@ export const SkillsScene: React.FC = () => {
 
   return (
     <motion.div 
-      className="scene-container w-full h-full flex flex-col items-center justify-center text-[#F5F0E6] relative bg-[#0F172A] overflow-y-auto pt-32 pb-32"
+      className="scene-container w-full h-full flex flex-col items-center justify-center text-[#F5F0E6] relative bg-[#0F172A] overflow-y-auto pt-24 pb-16"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -84,8 +84,8 @@ export const SkillsScene: React.FC = () => {
         >
           Technology Ecosystem
         </motion.h2>
-        <motion.h1 
-          className="font-heading text-[clamp(2.5rem,4vw,4rem)] font-bold mb-16 text-center text-[#F5F0E6] leading-none tracking-tight"
+        <motion.h1
+          className="font-heading text-[clamp(2rem,3.5vw,3.25rem)] font-bold mb-10 text-center text-[#F5F0E6] leading-none tracking-tight"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
@@ -93,9 +93,9 @@ export const SkillsScene: React.FC = () => {
         </motion.h1>
 
         {/* Constellation Canvas */}
-        <div className="relative w-full flex flex-col gap-12 md:gap-20 max-w-5xl">
+        <div className="relative w-full flex flex-col gap-6 md:gap-8 max-w-5xl">
           {CATEGORIES.map((category) => (
-            <div key={category} className="flex flex-col md:flex-row items-center md:items-start gap-8 w-full border-t border-[#F5F0E6]/10 pt-8">
+            <div key={category} className="flex flex-col md:flex-row items-center md:items-start gap-6 w-full border-t border-[#F5F0E6]/10 pt-6">
                <div className="w-full md:w-48 flex items-center md:items-start gap-4 flex-shrink-0">
                   <div className="w-8 h-[1px] bg-[#C88A2D] mt-2 hidden md:block" />
                   <h3 className="font-heading text-xs tracking-widest uppercase font-bold text-[#C88A2D]">{category}</h3>
@@ -112,7 +112,7 @@ export const SkillsScene: React.FC = () => {
                         key={skill.name}
                         onMouseEnter={() => setHoveredSkill(skill.name)}
                         onMouseLeave={() => setHoveredSkill(null)}
-                        className={`relative px-6 py-3 border border-[#F5F0E6]/20 bg-[#0F172A] cursor-crosshair transition-all duration-300
+                        className={`relative px-5 py-2.5 border border-[#F5F0E6]/20 bg-[#0F172A] cursor-crosshair transition-all duration-300
                                    ${active ? 'border-[#C88A2D] bg-[#C88A2D]/10 shadow-[0_0_20px_rgba(200,138,45,0.4)] z-20 scale-105' : ''}
                                    ${related && !active ? 'border-[#F5F0E6]/60 bg-[#F5F0E6]/5 z-10 scale-100' : ''}
                                    ${dimmed ? 'opacity-20 scale-95 border-[#F5F0E6]/5' : ''}

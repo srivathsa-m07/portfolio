@@ -23,7 +23,7 @@ export const CredentialsScene: React.FC = () => {
 
   return (
     <motion.div 
-      className="scene-container w-full h-full flex flex-col justify-center items-center text-[#F5F0E6] relative bg-[#0F172A] overflow-y-auto pt-32 pb-32"
+      className="scene-container w-full h-full flex flex-col justify-center items-center text-[#F5F0E6] relative bg-[#0F172A] overflow-y-auto pt-24 pb-16"
       initial={{ opacity: 0, scale: 0.98 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 1.02 }}
@@ -38,8 +38,8 @@ export const CredentialsScene: React.FC = () => {
         >
           Certification Archive
         </motion.h2>
-        <motion.h1 
-          className="font-heading text-[clamp(2rem,4vw,3.5rem)] font-bold mb-16 text-center text-[#F5F0E6]"
+        <motion.h1
+          className="font-heading text-[clamp(1.75rem,3.5vw,3rem)] font-bold mb-10 text-center text-[#F5F0E6]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
@@ -47,12 +47,12 @@ export const CredentialsScene: React.FC = () => {
           AUTHENTICATED RECORDS
         </motion.h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 pb-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 pb-16">
           {CREDENTIALS.map((cert, i) => (
             <motion.div
               key={cert.id}
               onClick={() => setActiveCert(cert)}
-              className="relative aspect-[4/3] bg-[#0F172A] flex flex-col items-center justify-center cursor-pointer group"
+              className="relative aspect-[4/3] min-h-[220px] bg-[#0F172A] flex flex-col items-center justify-center cursor-pointer group"
               style={{ perspective: 1000 }}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -71,7 +71,7 @@ export const CredentialsScene: React.FC = () => {
                      <span className="text-[#C88A2D] text-[8px] font-heading font-bold uppercase rotate-45">SEAL</span>
                   </div>
 
-                  <h3 className="font-heading text-sm font-bold text-[#0F172A] mb-3 leading-snug">{cert.name}</h3>
+                  <h3 className="font-heading text-xs md:text-sm font-bold text-[#0F172A] mb-3 leading-snug line-clamp-4">{cert.name}</h3>
                   <div className="flex flex-col gap-1 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 transform translate-y-4 group-hover:translate-y-0">
                     <span className="font-heading text-[9px] font-bold tracking-widest text-[#C88A2D] uppercase">{cert.issuer}</span>
                     <span className="font-heading text-[9px] font-bold tracking-widest text-[#0F172A]/50 uppercase">{cert.date}</span>
