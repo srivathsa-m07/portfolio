@@ -13,11 +13,12 @@ interface Skill {
 
 const SKILLS: Skill[] = [
   { name: 'Java', category: 'Programming', relatedTech: [], projects: [] },
+  { name: 'C++', category: 'Programming', relatedTech: [], projects: [] },
   { name: 'Python', category: 'Programming', relatedTech: ['MongoDB'], projects: [] },
   { name: 'JavaScript', category: 'Programming', relatedTech: ['React', 'Node.js', 'TypeScript'], projects: ['GRIDFLOW', 'HIREBRIDGE'] },
   { name: 'TypeScript', category: 'Programming', relatedTech: ['React', 'Node.js', 'Express', 'Fastify'], projects: ['GRIDFLOW', 'HIREBRIDGE', 'TRACELOCK'] },
-  { name: 'C++', category: 'Programming', relatedTech: [], projects: [] },
-  
+  { name: 'SQL', category: 'Programming', relatedTech: ['MySQL', 'PostgreSQL'], projects: [] },
+
   { name: 'React', category: 'Frontend', relatedTech: ['TypeScript', 'Tailwind', 'Next.js'], projects: ['GRIDFLOW', 'HIREBRIDGE', 'TRACELOCK'] },
   { name: 'Next.js', category: 'Frontend', relatedTech: ['React', 'TypeScript'], projects: [] },
   { name: 'HTML', category: 'Frontend', relatedTech: ['CSS', 'React'], projects: [] },
@@ -26,19 +27,23 @@ const SKILLS: Skill[] = [
 
   { name: 'Node.js', category: 'Backend', relatedTech: ['Express', 'Fastify', 'Socket.IO', 'TypeScript'], projects: ['GRIDFLOW', 'HIREBRIDGE', 'TRACELOCK'] },
   { name: 'Express', category: 'Backend', relatedTech: ['Node.js', 'MongoDB'], projects: ['GRIDFLOW', 'HIREBRIDGE'] },
+  { name: 'Nest.js', category: 'Backend', relatedTech: ['Node.js', 'TypeScript'], projects: [] },
   { name: 'Fastify', category: 'Backend', relatedTech: ['Node.js', 'PostgreSQL'], projects: ['TRACELOCK'] },
+  { name: 'REST APIs', category: 'Backend', relatedTech: ['Express', 'Fastify', 'Node.js'], projects: ['GRIDFLOW', 'HIREBRIDGE', 'TRACELOCK'] },
+  { name: 'Socket.IO', category: 'Backend', relatedTech: ['Node.js', 'React'], projects: ['GRIDFLOW', 'HIREBRIDGE'] },
 
   { name: 'MongoDB', category: 'Databases', relatedTech: ['Express', 'Node.js'], projects: ['GRIDFLOW', 'HIREBRIDGE'] },
   { name: 'PostgreSQL', category: 'Databases', relatedTech: ['Fastify'], projects: ['TRACELOCK'] },
-  { name: 'MySQL', category: 'Databases', relatedTech: [], projects: [] },
+  { name: 'MySQL', category: 'Databases', relatedTech: ['SQL'], projects: [] },
+  { name: 'Supabase', category: 'Databases', relatedTech: ['PostgreSQL'], projects: [] },
+  { name: 'Prisma ORM', category: 'Databases', relatedTech: ['PostgreSQL', 'MySQL'], projects: [] },
 
   { name: 'Docker', category: 'Tools', relatedTech: ['Node.js'], projects: ['GRIDFLOW'] },
   { name: 'Git', category: 'Tools', relatedTech: ['GitHub'], projects: [] },
   { name: 'GitHub', category: 'Tools', relatedTech: ['Git'], projects: [] },
-  { name: 'Socket.IO', category: 'Tools', relatedTech: ['Node.js', 'React'], projects: ['GRIDFLOW'] },
+  { name: 'CI/CD', category: 'Tools', relatedTech: ['GitHub', 'Docker'], projects: [] },
+  { name: 'Vercel', category: 'Tools', relatedTech: ['Next.js', 'React'], projects: ['GRIDFLOW'] },
   { name: 'Postman', category: 'Tools', relatedTech: ['Express', 'Fastify'], projects: [] },
-  { name: 'Power BI', category: 'Tools', relatedTech: ['Tableau', 'MySQL'], projects: [] },
-  { name: 'Tableau', category: 'Tools', relatedTech: ['Power BI'], projects: [] },
 ];
 
 export const SkillsScene: React.FC = () => {

@@ -4,18 +4,25 @@ import { LINKS } from '../config/links';
 
 const ACHIEVEMENTS = [
   {
-    title: 'ADZAP',
-    prize: 'First Prize',
-    description: 'Demonstrated exceptional problem-solving and rapid prototyping skills under high-pressure competitive constraints.',
-    year: '2024',
-    proof: LINKS.ADZAP_PROOF
-  },
-  {
-    title: 'FRESHATHON',
+    title: 'FRESHATHON 2025',
     prize: 'Third Prize',
-    description: 'Engineered an innovative solution focusing on real-world applicability and technical robustness.',
+    description: 'Awarded Third Prize at Project Expo 3.0 for an innovative solution focusing on real-world applicability and technical robustness.',
     year: '2025',
     proof: LINKS.FRESHATHON_PROOF
+  },
+  {
+    title: 'Smart India Hackathon (SIH)',
+    prize: 'Top 50 College Teams',
+    description: 'Selected among the Top 50 college teams to represent Sri Eshwar College of Engineering at the Smart India Hackathon.',
+    year: '2025',
+    proof: LINKS.SIH_PROOF
+  },
+  {
+    title: 'VORTEXA National Hackathon',
+    prize: 'Finalist',
+    description: 'Reached the finals of the VORTEXA National Hackathon hosted by HackHere.',
+    year: '2026',
+    proof: LINKS.VORTEXA_PROOF
   }
 ];
 

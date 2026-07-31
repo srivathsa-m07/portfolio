@@ -11,11 +11,11 @@ interface Credential {
 }
 
 const CREDENTIALS: Credential[] = [
-  { id: 'cpp-spoken', name: 'Certificate for the Completion of Cpp Training', issuer: 'SpokenTutorial - IIT Bombay', date: '2024', url: LINKS.CERT_CPP },
-  { id: 'c-spoken', name: 'Certificate for the Completion of C Training', issuer: 'SpokenTutorial - IIT Bombay', date: '2024', url: LINKS.CERT_C },
-  { id: 'frontend-html', name: 'Front End Development - HTML', issuer: 'GreatLearning', date: '2024', url: LINKS.CERT_HTML },
+  { id: 'design-thinking', name: 'Design Thinking - A Primer (Elite, Top 5%)', issuer: 'NPTEL', date: '2026', url: LINKS.CERT_DESIGN_THINKING },
   { id: 'mastering-dsa', name: 'Mastering Data Structures & Algorithms using C and C++', issuer: 'Udemy', date: '2025', url: LINKS.CERT_DSA },
-  { id: 'intro-c', name: 'Introduction to C', issuer: 'Sololearn', date: '2025', url: LINKS.CERT_SOLOLEARN }
+  { id: 'java-programmer', name: 'The Complete Java Programmer: From Scratch to Advanced', issuer: 'Udemy', date: '2025', url: LINKS.CERT_JAVA },
+  { id: 'c-iitb', name: 'C Programming', issuer: 'IIT Bombay', date: '2024', url: LINKS.CERT_C },
+  { id: 'cpp-iitb', name: 'C++ Programming', issuer: 'IIT Bombay', date: '2024', url: LINKS.CERT_CPP }
 ];
 
 export const CredentialsScene: React.FC = () => {

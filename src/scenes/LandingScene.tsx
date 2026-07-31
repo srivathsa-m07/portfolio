@@ -129,15 +129,15 @@ export const LandingScene: React.FC = () => {
                <span className="font-heading text-[8px] tracking-widest text-[#F5F0E6]/60 uppercase">Production Projects</span>
              </div>
              <div className="flex flex-col items-center md:items-start">
-               <span className="font-heading text-lg font-bold text-[#F5F0E6]">1035+</span>
+               <span className="font-heading text-lg font-bold text-[#F5F0E6]">1,060+</span>
                <span className="font-heading text-[8px] tracking-widest text-[#F5F0E6]/60 uppercase">SkillRack</span>
              </div>
              <div className="flex flex-col items-center md:items-start">
-               <span className="font-heading text-lg font-bold text-[#F5F0E6]">280+</span>
+               <span className="font-heading text-lg font-bold text-[#F5F0E6]">310+</span>
                <span className="font-heading text-[8px] tracking-widest text-[#F5F0E6]/60 uppercase">LeetCode</span>
              </div>
              <div className="flex flex-col items-center md:items-start">
-               <span className="font-heading text-lg font-bold text-[#F5F0E6]">275+</span>
+               <span className="font-heading text-lg font-bold text-[#F5F0E6]">285+</span>
                <span className="font-heading text-[8px] tracking-widest text-[#F5F0E6]/60 uppercase">CodeChef</span>
              </div>
              <div className="flex flex-col items-center md:items-start">
@@ -145,7 +145,7 @@ export const LandingScene: React.FC = () => {
                <span className="font-heading text-[8px] tracking-widest text-[#F5F0E6]/60 uppercase">Certifications</span>
              </div>
              <div className="flex flex-col items-center md:items-start">
-               <span className="font-heading text-lg font-bold text-[#F5F0E6]">2</span>
+               <span className="font-heading text-lg font-bold text-[#F5F0E6]">3</span>
                <span className="font-heading text-[8px] tracking-widest text-[#F5F0E6]/60 uppercase">Achievements</span>
              </div>
            </div>

@@ -5,26 +5,26 @@ import { LINKS } from '../config/links';
 const PROFILES = [
   {
     name: 'SkillRack',
-    statistic: '1035+',
-    subtext: 'Problems Solved',
+    statistic: '1,060+',
+    subtext: 'Problems Solved | Global Rank 22,180',
     url: LINKS.SKILLRACK
   },
   {
     name: 'LeetCode',
-    statistic: '280+',
-    subtext: 'Problems Solved',
+    statistic: '310+',
+    subtext: 'DSA Problems | Max Rating 1541',
     url: LINKS.LEETCODE
   },
   {
     name: 'CodeChef',
-    statistic: '275+',
-    subtext: 'Problems Solved',
+    statistic: '285+',
+    subtext: 'Problems Solved | Silver Badge',
     url: LINKS.CODECHEF
   },
   {
     name: 'HackerRank',
-    statistic: 'Python 3★',
-    subtext: 'C++ 3★ | SQL 2★ | Java 2★',
+    statistic: '3★ C++ / Java / Python',
+    subtext: '2★ SQL',
     url: LINKS.HACKERRANK
   }
 ];

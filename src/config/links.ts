@@ -24,10 +24,11 @@ export const LINKS = {
 
   CERT_CPP: "/certificates/CertificateCppTraining-iitbombay.pdf",
   CERT_C: "/certificates/CertificateCTraining-iitbombay.pdf",
-  CERT_HTML: "/certificates/FRONTEND-GREATLEARNING.pdf",
   CERT_DSA: "/certificates/udemy course.pdf",
-  CERT_SOLOLEARN: "/certificates/SRIVATHSA-Introduction to C_certificate.jpg",
+  CERT_JAVA: "#",
+  CERT_DESIGN_THINKING: "#",
 
-  ADZAP_PROOF: "#",
-  FRESHATHON_PROOF: "/certificates/FRESHATHON.jpg"
+  FRESHATHON_PROOF: "/certificates/FRESHATHON.jpg",
+  VORTEXA_PROOF: "#",
+  SIH_PROOF: "#"
 };
